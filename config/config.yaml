@@ -1,0 +1,64 @@
+# Trading Configuration
+trading:
+  symbol: "NIFTY 50"
+  exchange: "NSE"
+  instrument_token: "99926000"  # Nifty 50 token for Angel One
+  timeframe: "ONE_MINUTE"
+  max_position_size: 100000
+  risk_per_trade: 0.02
+  stop_loss_pct: 0.015
+  take_profit_pct: 0.025
+  min_confidence_threshold: 0.70
+
+# Model Configuration
+model:
+  sequence_length: 60
+  batch_size: 32
+  epochs: 100
+  learning_rate: 0.001
+  dropout_rate: 0.2
+  lstm_units: 50
+  dense_units: 25
+  validation_split: 0.2
+  early_stopping_patience: 10
+
+# Data Configuration
+data:
+  train_split: 0.8
+  validation_split: 0.1
+  test_split: 0.1
+  lookback_days: 365
+  data_source: "angel_one"
+  cache_data: true
+  cache_duration_hours: 24
+
+# Technical Indicators
+indicators:
+  sma_periods: [5, 10, 20, 50]
+  ema_periods: [12, 26]
+  rsi_period: 14
+  macd_fast: 12
+  macd_slow: 26
+  macd_signal: 9
+  bb_period: 20
+  bb_std: 2
+  stoch_k: 14
+  stoch_d: 3
+  adx_period: 14
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/trading_bot.log"
+  max_file_size: 10485760  # 10MB
+  backup_count: 5
+  console_output: true
+
+# System Configuration
+system:
+  timezone: "Asia/Kolkata"
+  update_frequency: 60  # seconds
+  max_retries: 3
+  retry_delay: 5  # seconds
+  performance_tracking: true

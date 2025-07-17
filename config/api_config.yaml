@@ -1,0 +1,25 @@
+# Angel One API Configuration
+angel_one:
+  api_key: "YOUR_API_KEY_HERE"
+  client_code: "YOUR_CLIENT_CODE_HERE"
+  password: "YOUR_PASSWORD_HERE"
+  totp_secret: "YOUR_TOTP_SECRET_HERE"
+  base_url: "https://apiconnect.angelbroking.com"
+
+# WebSocket Configuration
+websocket:
+  url: "wss://smartapisocket.angelone.in/smart-stream"
+  reconnect_attempts: 5
+  reconnect_delay: 5
+  heartbeat_interval: 30
+
+# Rate Limiting
+rate_limits:
+  api_calls_per_second: 10
+  max_concurrent_requests: 5
+
+# Backup Configuration
+backup:
+  enabled: true
+  frequency: "daily"
+  retention_days: 30
