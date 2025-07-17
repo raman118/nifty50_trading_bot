@@ -1,0 +1,9 @@
+{
+  "timestamp": "2025-07-17T22:42:08.560264",
+  "data_info": {
+    "total_samples": 77895,
+    "features": 66,
+    "sequence_length": 60
+  },
+  "training_results": {
+    "best_epoch": 
