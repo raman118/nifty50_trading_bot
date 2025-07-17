@@ -1,0 +1,28 @@
+# Angel One API
+smartapi-python==1.3.0
+
+# Machine Learning
+tensorflow==2.13.0
+scikit-learn==1.3.0
+numpy==1.24.3
+pandas==1.5.3
+joblib==1.3.2
+
+# Technical Analysis
+TA-Lib==0.4.28
+
+# WebSocket & Async
+websockets==11.0.3
+aiohttp==3.8.5
+
+# Configuration & Utilities
+pyyaml==6.0.1
+python-dotenv==1.0.0
+
+# Visualization
+matplotlib==3.7.2
+seaborn==0.12.2
+
+# Other utilities
+requests==2.31.0
+pytz==2023.3
